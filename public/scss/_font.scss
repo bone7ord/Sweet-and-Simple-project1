@@ -1,0 +1,145 @@
+/**
+  *
+  * FONT - GLOBAL
+  *
+**/
+
+
+$font: 'Roboto', sans-serif;
+$roboto: 'Roboto';
+
+
+body {
+ font: normal 18px/1 $font;
+ font: normal 1.66vh/1 $font;
+ color: $primary;
+}
+
+h1 {
+  font: lighter 54px/72px $font;
+  font: lighter 5vh/1.33 $font;
+}
+
+h2 {
+  font: 22px/40px $font;
+  font: 2.037vh/1.81 $font;
+}
+
+
+/**
+  *
+  * FONT - SECTION HERO
+  *
+**/
+
+
+.navigation-wrapper header nav ul li:last-child {
+  color: $active-link;
+}
+
+.active-link {
+  color: $active-link;
+}
+
+.title-wrapper p {
+  font: 32px/1.5 $font;
+  font: 2.96vh/1.5 $font;
+  text-align: center;
+  color: rgb(20, 34, 67);
+}
+
+.hero-title h1 {
+  color: $hero-h1;
+}
+
+
+/**
+  *
+  * FONT- SECTION FEATURE
+  *
+**/
+
+
+.feature-article {
+  h2 {
+    line-height: 3;
+    color: $feature-h2;
+  }
+
+  h1 {
+    font: 44px/1.4 $font;
+    font: 4.07vh/1.4 $font;
+    text-align: left;
+    color: $feature-h2;
+  }
+
+  p {
+    line-height: 2;
+    text-align: left;
+    color: $primary;
+  }
+}
+
+
+/**
+  *
+  * FONT - SECTION CTA
+  *
+**/
+
+
+.logos-wrapper h3 {
+    font: 22px/1.82 $font;
+    font: 2.04vh/1.82 $font;
+    color: $logos-title-h3;
+}
+
+.CTA-wrapper {
+  p {
+    font: 38px/1.53 $font;
+    text-align: center;
+    color: $CTA-text;
+  }
+
+  span {
+    line-height: 3.22;
+    text-align: center;
+    color: $CTA-author;
+  }
+
+  .btn span {
+    line-height: 2.22;
+    color: $btn-text;
+  }
+}
+
+
+/**
+  *
+  * FONT - SECTION FOOTER
+  *
+**/
+
+#footer .section-wrapper .inner .left, .middle, .right {
+  color: $footer-text;
+
+  ul li:first-child {
+    color: $footer-title;
+  }
+}
+
+
+#footer .left .text-wrapper {
+  p {
+    line-height: 1.9;
+  }
+
+  p:last-child {
+    font-size: 14px;
+    font-size: 1.3vh;
+  }
+}
+
+#footer .right li:last-child {
+  line-height: 1.5;
+}
