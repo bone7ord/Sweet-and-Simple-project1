@@ -7,14 +7,14 @@ var imagemin = require('gulp-imagemin');
 gulp.task('sass', function(){
   return gulp.src('sass-test/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('css-test'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
-  gulp.watch('sass-test/*.scss', ['sass']);
+  gulp.watch('sass/*.scss', ['sass']);
   gulp.watch('*.html', browserSync.reload);
   // gulp.watch('app/js/**/*.js', browserSync.reload);
 });
@@ -30,5 +30,5 @@ gulp.task('browserSync', function(){
 gulp.task('imagemin', function(){
   return gulp.src('img/**/*.+(png|jpg|gif|svg)')
   .pipe(imagemin())
-  .pipe(gulp.dest('img-test'))
+  .pipe(gulp.dest('img'))
 });
